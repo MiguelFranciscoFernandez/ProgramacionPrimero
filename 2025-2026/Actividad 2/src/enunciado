@@ -1,0 +1,41 @@
+
+
+    Ejercicio 1
+
+Pide por teclado un String que contenga preguntando por tu nombre, después muestra un mensaje de bienvenida por consola. Por ejemplo: si introduzco “Fernando”, me aparezca “Bienvenido Fernando”.
+
+    Ejercicio 2
+
+Pedir dos números y realizar operaciones básicas de suma, resta y multiplicación, enseñando el resultado.
+
+    Ejercicio 3
+
+Pedir un número calcular su raíz cuadra.
+
+    Ejercicio 4
+
+Pedir dos números (base y exponente) y calcular la potencia.
+
+    Ejercicio 5
+
+Pedir el radio de un circulo y calcular su área. (A=pi*r^2) (Podemos usar Math.PI para el valor de pi o poner directamente el valor)
+
+    Ejercicio 6     
+
+Pedir el radio de una circunferencia y calcular su longitud.(L=2+pi*r)
+
+    Ejercicio 7     
+
+Pedir un password y comprobar si es igual que un String definido en el programa. Enseñar el resultado por pantalla.
+
+    Ejercicio 8     
+
+Pedir una frase y enseñar por pantalla, la longitud, la primera y última letra.
+
+Pista: La función substring nos permite extraer una subcadena de una cadena.
+
+    Ejercicio 9     
+
+Pedir por consola o pantalla una frase que contenga la palabra "amigo", como por ejemplo: “Hola amigo ¿cómo estás?”. El programa deberá enseñar el substring "amigo" extraído de la cadena introducida por consola.
+
+Pista: La función indexOf del objeto cadena nos devuelve la posición en la que se encuentra una cadena dentro de otra.
