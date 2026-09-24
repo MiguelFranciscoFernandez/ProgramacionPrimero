@@ -132,18 +132,25 @@ public class Ejercicio3_1 {
         double costeTotal = 0;
         double costePorAlumno = 0;
 
-        if (alumnos >= 50) {
-            costePorAlumno = 40;
-            costeTotal = alumnos * costePorAlumno;
-        } else if (alumnos >= 30) {
-            costePorAlumno = 48;
-            costeTotal = alumnos * costePorAlumno;
-        } else if (alumnos >= 20) {
-            costePorAlumno = 56;
-            costeTotal = alumnos * costePorAlumno;
-        } else {
-            costeTotal = 2000;
-            costePorAlumno = costeTotal / alumnos;
+        switch (alumnos / 10) {
+            case 0:
+            case 1:
+                costeTotal = 2000;
+                costePorAlumno = alumnos > 0 ? costeTotal / alumnos : 0;
+                break;
+            case 2:
+                costePorAlumno = 56;
+                costeTotal = alumnos * costePorAlumno;
+                break;
+            case 3:
+            case 4:
+                costePorAlumno = 48;
+                costeTotal = alumnos * costePorAlumno;
+                break;
+            default:
+                costePorAlumno = 40;
+                costeTotal = alumnos * costePorAlumno;
+                break;
         }
 
         System.out.println("El coste total del viaje es: " + costeTotal + " euros");
