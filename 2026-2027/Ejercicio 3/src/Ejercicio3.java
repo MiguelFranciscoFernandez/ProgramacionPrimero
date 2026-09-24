@@ -75,6 +75,16 @@ public class Ejercicio3 {
      */
     public static void ejercicio4() {
         System.out.println("=== Ejercicio 4 ===");
+        System.out.print("Introduce la base: ");
+        int base = scanner.nextInt();
+        System.out.print("Introduce el exponente: ");
+        int exponente = scanner.nextInt();
+
+        if (exponente == 0) {
+            System.out.println("El resultado es: 1");
+        } else {
+            System.out.println("El resultado es: " + Math.pow(base, exponente));
+        }
 
         System.out.println();
     }
@@ -88,7 +98,20 @@ public class Ejercicio3 {
      */
     public static void ejercicio5() {
         System.out.println("=== Ejercicio 5 ===");
+        System.out.print("Introduce el primer lado: ");
+        int lado1 = scanner.nextInt();
+        System.out.print("Introduce el segundo lado: ");
+        int lado2 = scanner.nextInt();
+        System.out.print("Introduce el tercer lado: ");
+        int lado3 = scanner.nextInt();
 
+        if (lado1 == lado2 && lado2 == lado3) {
+            System.out.println("El triángulo es equilátero");
+        } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+            System.out.println("El triángulo es isósceles");
+        } else {
+            System.out.println("El triángulo es escaleno");
+        }
         System.out.println();
     }
 
@@ -104,6 +127,27 @@ public class Ejercicio3 {
      */
     public static void ejercicio6() {
         System.out.println("=== Ejercicio 6 ===");
+        System.out.print("Introduce el número de alumnos: ");
+        int alumnos = scanner.nextInt();
+        double costeTotal = 0;
+        double costePorAlumno = 0;
+
+        if (alumnos >= 50) {
+            costePorAlumno = 40;
+            costeTotal = alumnos * costePorAlumno;
+        } else if (alumnos >= 30) {
+            costePorAlumno = 48;
+            costeTotal = alumnos * costePorAlumno;
+        } else if (alumnos >= 20) {
+            costePorAlumno = 56;
+            costeTotal = alumnos * costePorAlumno;
+        } else {
+            costeTotal = 2000;
+            costePorAlumno = costeTotal / alumnos;
+        }
+
+        System.out.println("El coste total del viaje es: " + costeTotal + " euros");
+        System.out.println("El coste por alumno es: " + costePorAlumno + " euros");
 
         System.out.println();
     }
