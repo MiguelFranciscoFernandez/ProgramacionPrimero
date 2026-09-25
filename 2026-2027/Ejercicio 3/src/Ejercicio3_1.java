@@ -134,6 +134,8 @@ public class Ejercicio3_1 {
 
         switch (alumnos / 10) {
             case 0:
+                costeTotal = 2000;
+                costePorAlumno = alumnos > 0 ? costeTotal / alumnos : 0;
             case 1:
                 costeTotal = 2000;
                 costePorAlumno = alumnos > 0 ? costeTotal / alumnos : 0;
