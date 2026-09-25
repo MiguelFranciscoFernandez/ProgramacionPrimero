@@ -55,7 +55,7 @@ public class Ejercicio3_1 {
         System.out.print("Introduce el segundo número: ");
         int num2 = scanner.nextInt();
         if (num2 == 0) {
-            System.out.println("Error: No se puede dividir entre 0");
+            System.out.println("Error");
         } else {
             System.out.println("El resultado de la división es: " + (num1 / num2));
         }
