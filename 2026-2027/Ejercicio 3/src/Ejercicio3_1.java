@@ -133,19 +133,23 @@ public class Ejercicio3_1 {
         double costePorAlumno = 0;
 
         switch (alumnos / 10) {
-            case 0:
-                costeTotal = 2000;
-                costePorAlumno = alumnos > 0 ? costeTotal / alumnos : 0;
-            case 1:
+            case 0:// 0 a 9 alumnos
                 costeTotal = 2000;
                 costePorAlumno = alumnos > 0 ? costeTotal / alumnos : 0;
                 break;
-            case 2:
+            case 1:// 10 a 19 alumnos
+                costeTotal = 2000;
+                costePorAlumno = alumnos > 0 ? costeTotal / alumnos : 0;
+                break;
+            case 2:// 20 a 29 alumnos
                 costePorAlumno = 56;
                 costeTotal = alumnos * costePorAlumno;
                 break;
-            case 3:
-            case 4:
+            case 3:// 30 a 39 alumnos
+                costePorAlumno = 48;
+                costeTotal = alumnos * costePorAlumno;
+                break;
+            case 4:// 40 a 49 alumnos
                 costePorAlumno = 48;
                 costeTotal = alumnos * costePorAlumno;
                 break;
